@@ -12,7 +12,37 @@
 		2EAA625C209044FA00DB1507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA625A209044FA00DB1507 /* Main.storyboard */; };
 		2EAA625E209044FB00DB1507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA625D209044FB00DB1507 /* Assets.xcassets */; };
 		2EAA6261209044FB00DB1507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA625F209044FB00DB1507 /* LaunchScreen.storyboard */; };
+		500CC5D322181B4A0065186E /* SimpleSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500CC5CA22181B490065186E /* SimpleSwiftFramework.framework */; };
+		500CC5DA22181B4A0065186E /* SimpleSwiftFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500CC5D922181B4A0065186E /* SimpleSwiftFrameworkTests.swift */; };
+		500CC5DC22181B4A0065186E /* SimpleSwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 500CC5CC22181B490065186E /* SimpleSwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		500CC5DF22181B4A0065186E /* SimpleSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500CC5CA22181B490065186E /* SimpleSwiftFramework.framework */; };
+		500CC5E022181B4A0065186E /* SimpleSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 500CC5CA22181B490065186E /* SimpleSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		500CC5E822181B950065186E /* CallingFrameworkFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500CC5E722181B950065186E /* CallingFrameworkFunction.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		500CC5D422181B4A0065186E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EAA624B209044FA00DB1507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500CC5C922181B490065186E;
+			remoteInfo = SimpleSwiftFramework;
+		};
+		500CC5D622181B4A0065186E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EAA624B209044FA00DB1507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EAA6252209044FA00DB1507;
+			remoteInfo = Test4_UseYourFramework;
+		};
+		500CC5DD22181B4A0065186E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EAA624B209044FA00DB1507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500CC5C922181B490065186E;
+			remoteInfo = SimpleSwiftFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2EAA626C2090465A00DB1507 /* Embed Frameworks */ = {
@@ -21,6 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				500CC5E022181B4A0065186E /* SimpleSwiftFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +66,13 @@
 		2EAA625D209044FB00DB1507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EAA6260209044FB00DB1507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EAA6262209044FB00DB1507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500CC5CA22181B490065186E /* SimpleSwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleSwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500CC5CC22181B490065186E /* SimpleSwiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleSwiftFramework.h; sourceTree = "<group>"; };
+		500CC5CD22181B490065186E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500CC5D222181B4A0065186E /* SimpleSwiftFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSwiftFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		500CC5D922181B4A0065186E /* SimpleSwiftFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSwiftFrameworkTests.swift; sourceTree = "<group>"; };
+		500CC5DB22181B4A0065186E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500CC5E722181B950065186E /* CallingFrameworkFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingFrameworkFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +80,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500CC5DF22181B4A0065186E /* SimpleSwiftFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500CC5C722181B490065186E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500CC5CF22181B4A0065186E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500CC5D322181B4A0065186E /* SimpleSwiftFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				2EAA6255209044FA00DB1507 /* Test4_UseYourFramework */,
+				500CC5CB22181B490065186E /* SimpleSwiftFramework */,
+				500CC5D822181B4A0065186E /* SimpleSwiftFrameworkTests */,
 				2EAA6254209044FA00DB1507 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				2EAA6253209044FA00DB1507 /* Test4_UseYourFramework.app */,
+				500CC5CA22181B490065186E /* SimpleSwiftFramework.framework */,
+				500CC5D222181B4A0065186E /* SimpleSwiftFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +135,37 @@
 			path = Test4_UseYourFramework;
 			sourceTree = "<group>";
 		};
+		500CC5CB22181B490065186E /* SimpleSwiftFramework */ = {
+			isa = PBXGroup;
+			children = (
+				500CC5CC22181B490065186E /* SimpleSwiftFramework.h */,
+				500CC5CD22181B490065186E /* Info.plist */,
+				500CC5E722181B950065186E /* CallingFrameworkFunction.swift */,
+			);
+			path = SimpleSwiftFramework;
+			sourceTree = "<group>";
+		};
+		500CC5D822181B4A0065186E /* SimpleSwiftFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				500CC5D922181B4A0065186E /* SimpleSwiftFrameworkTests.swift */,
+				500CC5DB22181B4A0065186E /* Info.plist */,
+			);
+			path = SimpleSwiftFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		500CC5C522181B490065186E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500CC5DC22181B4A0065186E /* SimpleSwiftFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2EAA6252209044FA00DB1507 /* Test4_UseYourFramework */ = {
@@ -92,11 +180,49 @@
 			buildRules = (
 			);
 			dependencies = (
+				500CC5DE22181B4A0065186E /* PBXTargetDependency */,
 			);
 			name = Test4_UseYourFramework;
 			productName = Test4_UseYourFramework;
 			productReference = 2EAA6253209044FA00DB1507 /* Test4_UseYourFramework.app */;
 			productType = "com.apple.product-type.application";
+		};
+		500CC5C922181B490065186E /* SimpleSwiftFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500CC5E522181B4A0065186E /* Build configuration list for PBXNativeTarget "SimpleSwiftFramework" */;
+			buildPhases = (
+				500CC5C522181B490065186E /* Headers */,
+				500CC5C622181B490065186E /* Sources */,
+				500CC5C722181B490065186E /* Frameworks */,
+				500CC5C822181B490065186E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleSwiftFramework;
+			productName = SimpleSwiftFramework;
+			productReference = 500CC5CA22181B490065186E /* SimpleSwiftFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		500CC5D122181B4A0065186E /* SimpleSwiftFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500CC5E622181B4A0065186E /* Build configuration list for PBXNativeTarget "SimpleSwiftFrameworkTests" */;
+			buildPhases = (
+				500CC5CE22181B4A0065186E /* Sources */,
+				500CC5CF22181B4A0065186E /* Frameworks */,
+				500CC5D022181B4A0065186E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				500CC5D522181B4A0065186E /* PBXTargetDependency */,
+				500CC5D722181B4A0065186E /* PBXTargetDependency */,
+			);
+			name = SimpleSwiftFrameworkTests;
+			productName = SimpleSwiftFrameworkTests;
+			productReference = 500CC5D222181B4A0065186E /* SimpleSwiftFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,12 +230,20 @@
 		2EAA624B209044FA00DB1507 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = AppMan;
 				TargetAttributes = {
 					2EAA6252209044FA00DB1507 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					500CC5C922181B490065186E = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					500CC5D122181B4A0065186E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2EAA6252209044FA00DB1507;
 					};
 				};
 			};
@@ -127,6 +261,8 @@
 			projectRoot = "";
 			targets = (
 				2EAA6252209044FA00DB1507 /* Test4_UseYourFramework */,
+				500CC5C922181B490065186E /* SimpleSwiftFramework */,
+				500CC5D122181B4A0065186E /* SimpleSwiftFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +278,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500CC5C822181B490065186E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500CC5D022181B4A0065186E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -154,7 +304,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500CC5C622181B490065186E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500CC5E822181B950065186E /* CallingFrameworkFunction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500CC5CE22181B4A0065186E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500CC5DA22181B4A0065186E /* SimpleSwiftFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		500CC5D522181B4A0065186E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500CC5C922181B490065186E /* SimpleSwiftFramework */;
+			targetProxy = 500CC5D422181B4A0065186E /* PBXContainerItemProxy */;
+		};
+		500CC5D722181B4A0065186E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EAA6252209044FA00DB1507 /* Test4_UseYourFramework */;
+			targetProxy = 500CC5D622181B4A0065186E /* PBXContainerItemProxy */;
+		};
+		500CC5DE22181B4A0065186E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500CC5C922181B490065186E /* SimpleSwiftFramework */;
+			targetProxy = 500CC5DD22181B4A0065186E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2EAA625A209044FA00DB1507 /* Main.storyboard */ = {
@@ -293,6 +477,7 @@
 		2EAA6266209044FB00DB1507 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 737YM5KQ4T;
@@ -317,6 +502,7 @@
 		2EAA6267209044FB00DB1507 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 737YM5KQ4T;
@@ -338,6 +524,113 @@
 			};
 			name = Release;
 		};
+		500CC5E122181B4A0065186E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 737YM5KQ4T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleSwiftFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsensei.SimpleSwiftFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		500CC5E222181B4A0065186E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 737YM5KQ4T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleSwiftFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsensei.SimpleSwiftFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		500CC5E322181B4A0065186E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleSwiftFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsensei.SimpleSwiftFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test4_UseYourFramework.app/Test4_UseYourFramework";
+			};
+			name = Debug;
+		};
+		500CC5E422181B4A0065186E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleSwiftFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsensei.SimpleSwiftFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test4_UseYourFramework.app/Test4_UseYourFramework";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +648,24 @@
 			buildConfigurations = (
 				2EAA6266209044FB00DB1507 /* Debug */,
 				2EAA6267209044FB00DB1507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500CC5E522181B4A0065186E /* Build configuration list for PBXNativeTarget "SimpleSwiftFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500CC5E122181B4A0065186E /* Debug */,
+				500CC5E222181B4A0065186E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500CC5E622181B4A0065186E /* Build configuration list for PBXNativeTarget "SimpleSwiftFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500CC5E322181B4A0065186E /* Debug */,
+				500CC5E422181B4A0065186E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
