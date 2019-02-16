@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didPressAction(button: UIButton) {
-        CallingFrameworkFunction.alert(message: messageTextfield.text)
+        CallingFrameworkFunction.alert(message: messageTextfield.text!)
     }
 }
 
